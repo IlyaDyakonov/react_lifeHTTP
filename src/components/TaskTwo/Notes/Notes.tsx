@@ -29,7 +29,7 @@ interface NotesState {
 }
 
 // URL для получения и отправки заметок
-const notesUrl = process.env.REACT_APP_NOTES_URL;
+const notesUrl = import.meta.env.VITE_NOTES_URL
 console.log('Notes URL:', notesUrl);
 
 /**
